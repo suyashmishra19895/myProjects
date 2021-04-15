@@ -1,0 +1,186 @@
+/* #c7c9d3 bgcolor*/
+body {
+  background-color: #dee0eb;
+}
+/* ---------------header------------------ */
+
+#header {
+  display: flex;
+}
+#header-img {
+  display: flex;
+  align-items: left;
+  width: 500px;
+  height: 120px;
+}
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50vw;
+  margin-top: 30px;
+}
+#nav-bar a {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+.nav-link {
+  margin-right: 40px;
+}
+/* ---------------------------------------- */
+
+/* -----------------------email------------------------ */
+#form {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#email {
+  width: 400px;
+}
+#form h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+#submit {
+  width: 130px;
+  background-color: orange;
+  font-weight: bold;
+  border: 3px solid black;
+  /* border-radius: 10%; */
+}
+/* ----------------------------------------- */
+/* ------------------features-------------------- */
+#features {
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px;
+}
+p {
+  width: 700px;
+  margin-top: 0;
+}
+i {
+  float: left;
+  font-size: 50px;
+  margin-right: 80px;
+  color: darkorange;
+}
+h1 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.div-text {
+  float: right;
+}
+#shipping-text {
+  position: relative;
+  right: 12px;
+}
+#quality-text {
+  position: relative;
+  right: 12px;
+}
+
+.fas {
+  position: relative;
+  top: 10px;
+}
+/* --------------------video------------------------- */
+.video-section {
+  z-index: -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
+#video {
+  width: 50vw;
+  height: 50vh;
+}
+/* --------------------pricing-------------------- */
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h5 {
+  background: rgb(211, 210, 210);
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+#pricing p {
+  text-align: center;
+  width: 200px;
+  margin-left: 30px;
+}
+.card {
+  border: 1px solid black;
+  margin: 15px;
+  background-color: #dee0eb;
+}
+#pricing a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkorange;
+}
+.card-body {
+  width: 100%;
+  margin: 0;
+}
+.inrupees {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+/* --------------------------footer------------------- */
+.footer {
+  margin-top: 130px;
+}
+#footer-links {
+  padding-left: 800px;
+  padding-right: 0;
+  position: relative;
+  left: 200px;
+  float: right;
+  right: 0;
+  bottom: 10px;
+  background: rgb(211, 210, 210);
+  padding-top: 20px;
+}
+#footer-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: 30px;
+}
+/* ------------------media-------------------- */
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  #header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+} ;

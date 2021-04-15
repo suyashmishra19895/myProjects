@@ -1,0 +1,232 @@
+/* red #be3144 black #45567d blue 
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+*/
+
+/* ----------------------------navbar--------------------- */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(44, 44, 44);
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #be3144;
+
+  z-index: 10;
+}
+
+#nav-list {
+  display: flex;
+  /* background-color: #be3144; */
+  /* padding-left: 100%; */
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+
+#nav-list li {
+  position: relative;
+  margin-right: 80px;
+  margin-top: 30px;
+  color: white;
+  font-size: 25px;
+  list-style-type: none;
+}
+#nav-list li:hover {
+  background-color: #45567d;
+  padding: 10px;
+}
+#nav-list a {
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* 
+#navbar {
+  width: 100%;
+  margin: 0;
+  background-color: #be3144;
+  z-index: 2;
+} */
+
+/* 
+ul {
+  list-style-type: none;
+} */
+
+/* ---------------------------------------welcome--------------- */
+#all-content {
+  height: 100%;
+  position: relative;
+  bottom: 18px;
+  margin: 0;
+  /* z-index: -1; */
+}
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: rgb(43, 43, 43);
+}
+h1 {
+  font-weight: bolder;
+  color: white;
+  padding-top: 100px;
+  font-size: 60px;
+}
+em {
+  color: #be3144;
+  font-size: 25px;
+  font-weight: lighter;
+}
+/* --------------------------------projects-------------------------------- */
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #45567d;
+  color: white;
+  text-decoration: underline;
+}
+
+#row1-div {
+  display: flex;
+  margin-top: 200px;
+}
+.project-head {
+  position: relative;
+}
+.project-head p {
+  position: absolute;
+  bottom: 20px;
+  font-size: 2.2rem;
+  width: 500px;
+  height: 300px;
+}
+#row2-div {
+  display: flex;
+}
+.card {
+  margin: 30px;
+  border: 5px solid rgb(43, 43, 43);
+  width: 400px;
+  height: 500px;
+  background-image: cover;
+}
+img {
+  width: 100%;
+  height: 90vh;
+}
+.card-body {
+  background-color: rgb(44, 44, 44);
+}
+.btn {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 30;
+  border: 0;
+  background-color: rgb(44, 44, 44);
+  font-size: 28px;
+  /* padding: 0; */
+}
+code:hover {
+  color: orange;
+}
+#show-link {
+  margin: 50px;
+  background-color: rgb(44, 44, 44);
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+}
+#show-link:hover {
+  background-color: #be3144;
+  text-decoration: none;
+  color: gold;
+}
+code {
+  text-decoration: none;
+}
+
+/* ------------------------------Contacts---------------------- */
+#contacts {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(44, 44, 44);
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  z-index: -1;
+}
+#profile-section a {
+  text-decoration: none;
+  color: white;
+  padding-right: 40px;
+  font-size: 22px;
+}
+
+#profile-section a:hover {
+  animation-name: move;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  transition-delay: 0.3s;
+}
+@keyframes move {
+  0% {
+    position: relative;
+    top: 0;
+  }
+
+  100% {
+    position: relative;
+
+    top: 10px;
+  }
+}
+/* -----------------------footer----------------- */
+/* 
+#profile-section a:hover {
+  transition: transform 50ms ease-in-out 25ms;
+  transform: translateY(30px);
+} */
+footer p {
+  padding: 30px 0 30px 30px;
+  color: white;
+}
+footer {
+  border-top: 5px solid #be3144;
+  position: relative;
+  background-color: rgb(44, 44, 44);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+}

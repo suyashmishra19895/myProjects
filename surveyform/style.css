@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&display=swap");
+/* <!-- 007cc7 4da8da 12232e----blue---->
+<!-- 164a41 4d774e 9dc88d ----green----> */
+
+.parts {
+  width: 500px;
+  height: 25px;
+  margin-top: 5px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ed38a;
+}
+#title {
+  font-family: "PT Serif", serif;
+  font-size: 40px;
+}
+#description {
+  font-family: "PT Serif", serif;
+  font-weight: 590;
+}
+#form {
+  overflow: hidden;
+
+  color: white;
+  background-color: #164a41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 10px solid black;
+  padding: 50px;
+  width: 50vw;
+  font-family: "PT Serif", serif;
+}
+
+p {
+  position: relative;
+
+  line-height: 1;
+}
+#dropdown {
+  width: 37vw;
+  padding: 7px;
+}
+.radio-button {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  width: 38vw;
+}
+textarea {
+  margin-top: 10px;
+}

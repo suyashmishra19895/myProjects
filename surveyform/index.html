@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        <em>Thanks for applying, All sections are mandatory</em>
+      </p>
+      <!-- -----form------- -->
+
+      <form action="" id="survey-form">
+        <br />
+        <label id="name-label" for="name">Name :</label><br />
+        <input
+          class="parts"
+          placeholder="  Enter Text Here"
+          type="name"
+          id="name"
+          required
+        />
+        <br />
+        <br />
+
+        <label id="email-label" for="email">Email :</label><br />
+        <input
+          class="parts"
+          placeholder="  Enter email Here"
+          type="email"
+          id="email"
+          required
+        />
+        <br />
+        <br />
+        <label id="number-label" for="number">Age :</label><br />
+        <input
+          class="parts"
+          placeholder="  Enter Age Here"
+          type="number"
+          min="1"
+          max="90"
+          id="number"
+        />
+        <br />
+        <br />
+
+        <!-- ---------------dropdown------------ -->
+
+        <div class="dropdown">
+          <p>Which option best describes your current role?</p>
+          <select name="roles" id="dropdown">
+            <option value="">---Select current role---</option>
+            <option value="">Student</option>
+            <option value="">Full time Job</option>
+            <option value="">Full time Learner</option>
+            <option value="">Others</option>
+          </select>
+        </div>
+        <!-- ------------------radio button----------------- -->
+        <br />
+
+        <p>Would you recommend our services to a friend?</p>
+        <div class="radio-button">
+          <div>
+            <input
+              value="definately"
+              id="definately"
+              name="Definately"
+              type="radio"
+            />
+            <label for="definately">Definately</label>
+          </div>
+          <div>
+            <input value="maybe" id="maybe" name="Definately" type="radio" />
+            <label for="maybe">Maybe</label>
+          </div>
+          <div>
+            <input
+              value="notsure"
+              id="notsure"
+              name="Definately"
+              type="radio"
+            />
+            <label for="notsure">Not sure</label>
+          </div>
+        </div>
+        <!-- ----------------checkboxes-------------- -->
+        <br />
+
+        <div class="checkboxes">
+          <p>Which city would you prefer for Job?</p>
+          <div>
+            <input value="delhi" type="checkbox" name="delhi" id="delhi" />
+            <label for="delhi">Delhi</label>
+          </div>
+          <div>
+            <input value="mumbai" type="checkbox" name="mumbai" id="mumbai" />
+            <label for="mumbai">Mumbai</label>
+          </div>
+          <div>
+            <input
+              value="chennai"
+              type="checkbox"
+              name="chennai"
+              id="chennai"
+            />
+            <label for="chennai">Chennai</label>
+          </div>
+          <div>
+            <input
+              value="banglore"
+              type="checkbox"
+              name="banglore"
+              id="banglore"
+            />
+            <label for="banglore">Banglore</label>
+          </div>
+          <div>
+            <input value="indore" type="checkbox" name="indore" id="indore" />
+            <label for="indore">Indore</label>
+          </div>
+          <input value="bhopal" type="checkbox" name="bhopal" id="bhopal" />
+          <label for="bhopal">Bhopal</label>
+          <div>
+            <input
+              value="lukhnow"
+              type="checkbox"
+              name="luckhnow"
+              id="luckhnow"
+            />
+            <label for="luckhnow">luckhnow</label>
+          </div>
+          <div>
+            <input
+              value="heydrabad"
+              type="checkbox"
+              name="heydrabad"
+              id="heydrabad"
+            />
+            <label for="heydrabad">heydrabad</label>
+          </div>
+        </div>
+        <!-- -----------------textarea------------ -->
+        <p>Any comments or suggestions?</p>
+        <textarea
+          placeholder="Enter your Comments here"
+          name="suggest"
+          id="textbox"
+          cols="70"
+          rows="6"
+        ></textarea>
+        <br />
+        <div class="submit">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+      <!-- <--------------------form---------------->
+    </div>
+  </body>
+</html>
